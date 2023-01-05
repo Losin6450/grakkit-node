@@ -99,7 +99,7 @@ public class Instance {
          try {
             this.runtime = this.engine.getV8Runtime();
             this.runtime.setConverter(new JavetProxyConverter());
-            this.runtime.getGlobalObject().set("Java", new JavaAPI());
+            this.runtime.getGlobalObject().set("Java", new JavaAPI(this));
             this.runtime.getGlobalObject().set("Grakkit", new GrakkitAPI(this));
             this.execute();
          } catch (Throwable error) {
