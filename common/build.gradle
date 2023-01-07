@@ -7,6 +7,8 @@ dependencies {
    implementation 'com.eclipsesource.minimal-json:minimal-json:0.9.5'
    implementation 'me.carleslc.Simple-YAML:Simple-Yaml:1.8'
    implementation "com.caoccao.javet:javet:2.0.3"
+   implementation 'net.bytebuddy:byte-buddy:1.12.20'
+
 }
 
 jar {
